@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./api.js" defer></script>
+    <script src="./components/card.js" defer></script>
+    <script src="./components/showCatCard.js" defer></script>
+    <!-- <script src="./api2.js" defer></script> -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img>
+        <button class="add-cat-btn" type="button">Добавить котика</button>
+    </header>
+
+    <div id="homepage">
+        <div class="content"></div>
+        
+        <div class="create-edit-modal-form">
+            <form action="">
+                <label for="id">ID</label>
+                <input id="id" name="id" placeholder="Id" required>
+
+                <label for="name">Имя</label>
+                <input id="name" name="name" placeholder="Имя" required>
+
+                <label for="image">Изображение</label>
+                <input id="image" name="image" placeholder="Ссылка на изображение" required>
+
+                <label for="age">Возраст</label>
+                <input id="age" name="age" type="number" placeholder="Возраст" required>
+
+                <label for="rate">Рейтинг</label>
+                <input id="rate" name="rate" type="number" placeholder="Рейтинг" required>
+
+                <label>Любимчик
+                    <label><input name="favorite" type="radio" value="true" checked required>Да</label>
+                    <label><input name="favorite" type="radio" value="false" required>Нет</label>
+                </label>                
+
+                <label for="description">Описание</textarea></label>
+                <textarea id="description" rows="3" name="description" placeholder="Описание" required></textarea>
+
+                <div><button type="submit">OK</button><button class="exit-modal" type="button">Закрыть</button></div>
+            </form>
+        </div>
+
+        <div class="show-cat-card"></div>        
+    </div>
+</body>
+</html>
+
+

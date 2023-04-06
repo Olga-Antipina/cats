@@ -1,0 +1,212 @@
+#homepage {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 242, 250);
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    font-size: 15px;
+}
+
+.cat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    border: solid 3px rgb(255, 156, 219);
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.cat-card img {
+    width: 200px;
+}
+
+.cat-card button,
+.show-cat-card-info button {
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(255, 50, 180);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 15px 20px rgba(255, 46, 178, 0.25);
+    padding: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.cat-card button:hover,
+.show-cat-card-info button:hover {
+    background-color: white;
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.show-cat-card {    
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 800px;
+    height: 400px;
+    left: calc(50vw - 400px);
+    top: 20%;
+    background-color: rgba(255, 50, 180, 0.7);
+    border-radius: 30px;
+    padding: 20px;
+    display: none;
+}
+
+.show-cat-card img {
+    width: 45%;
+}
+
+.show-cat-card-info {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    line-height: 25px;
+    text-align: left;
+    font-weight: 600;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 350px;
+    border-radius: 30px;
+    overflow: auto;
+    float: right;
+}
+
+.show-cat-card-info button {
+    margin-top: 15px;
+    position: relative;
+    left: 15px;
+}
+
+.create-edit-modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    left: calc(50vw - 150px);
+    top: 20%;
+    background-color: rgba(255, 50, 180, 0.7);
+    border-radius: 30px;
+    padding: 20px;
+    display: none;
+    overflow: auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: 600;
+}
+
+.create-edit-modal-form button {
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(255, 50, 180);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 15px 20px rgba(255, 46, 178, 0.25);
+    padding: 15px;
+    width: 100px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.create-edit-modal-form button:hover {
+    background-color: white;
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.create-edit-modal-form input {
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border: solid 3px rgb(255, 156, 219);
+    border-radius: 15px;
+    padding: 15px;
+    width: 70%;
+}
+
+.create-edit-modal-form textarea {
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    border: solid 3px rgb(255, 156, 219);
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    resize: vertical;
+    width: 70%;
+}
+
+.active {
+    display: block;
+}
+
+.add-cat-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(255, 50, 180);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 15px 20px rgba(255, 46, 178, 0.25);
+    padding: 15px;
+}
+
+.add-cat-btn:hover {
+    background-color: white;
+    color: black;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 156, 219);
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 15px 20px rgba(255, 46, 178, 0.25);
+}
